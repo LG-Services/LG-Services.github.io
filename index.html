@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LG &dash; Services</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="year.js" defer></script>
+        <script defer>
+            let alerted = localStorage.getItem("alerted") || "";
+            
+            if (alerted != "yes") {
+                localStorage.setItem("alerted", "yes");
+                window.alert("Please read terms of service before you place an order. The terms of service link is at the bottom of the page.")
+            }
+        </script>
+    </head>
+    <body dir="ltr">
+        <div class="header">
+            <h1>LG &dash; Services</h1>
+            <p>Local Services in Albuquerque, NM</p>
+        </div>
+        <div class="content" align="center">
+            <h1>Dog Services</h1>
+            <table>
+                <tr>
+                    <th>Dog Service</th>
+                    <th>Price</th>
+                    <th>Contact</th>
+                </tr>
+                <tr>
+                    <td>Dog Walking</td>
+                    <td><a href="dog.html?package=walking">See prices</a></td>
+                    <td><a href="mailto:landengregory54@gmail.com">landengregory54@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Dog Washing</td>
+                    <td><a href="dog.html?package=washing">See prices</a></td>
+                    <td><a href="mailto:landengregory54@gmail.com">landengregory54@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Dog Brushing/Deshedding</td>
+                    <td><a href="dog.html?package=brushing">See prices</a></td>
+                    <td><a href="mailto:landengregory54@gmail.com">landengregory54@gmail.com</a></td>
+                </tr>
+            </table>
+            <h1>Landscaping</h1>
+            <table>
+                <tr>
+                    <th>Landscaping Service</th>
+                    <th>Price</th>
+                    <th>Contact</th>
+                </tr>
+                <tr>
+                    <td>Lawn Mowing</td>
+                    <td><a href="landscaping.html?package=mowing">See prices</a></td>
+                    <td><a href="mailto:landengregory54@gmail.com">landengregory54@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>General Clean</td>
+                    <td><a href="landscaping.html?package=clean">See prices</a></td>
+                    <td><a href="mailto:landengregory54@gmail.com">landengregory54@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Weeding Yards</td>
+                    <td><a href="landscaping.html?package=weeding">See prices</a></td>
+                    <td><a href="mailto:landengregory54@gmail.com">landengregory54@gmail.com</a></td>
+                </tr>
+            </table>
+            <p><a href="terms-of-service.html">Terms of Service</a><br/>
+            Copyright LG Services &copy; 2024 &dash; <span class="year"></span> all rights reserved.</p>
+        </div>
+    </body>
+</html>
