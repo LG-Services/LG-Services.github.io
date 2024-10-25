@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LG &dash; Services</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script defer>
+            let url = window.location.href;
+            
+            window.onload = function() {
+                let date = new Date();
+                let year = date.getFullYear() + 1;
+                
+                if (url.includes("?package=walking") == true) {
+                    document.querySelector("#service").innerHTML = "Dog Walking";
+                    document.querySelector("#price").innerHTML = 
+                    `<table>
+                        <tr>
+                            <th>Dog Size</th>
+                            <th>30 minute walk</th>
+                            <th>1 hour 30 minute walk</th>
+                            <th>2 hour walk</th>
+                        </tr>
+                        <tr>
+                            <td>Extra Large (80 pounds - above)</td>
+                            <td>$35 per dog</td>
+                            <td>$50 per dog</td>
+                            <td>$60 per dog</td>
+                        </tr>
+                        <tr>
+                            <td>Large (50 - 80 pounds)</td>
+                            <td>$30 per dog</td>
+                            <td>$45 per dog</td>
+                            <td>$55 per dog</td>
+                        </tr>
+                        <tr>
+                            <td>Medium (30 - 45 pounds)</td>
+                            <td>$25 per dog</td>
+                            <td>$40 per dog</td>
+                            <td>$50 per dog</td>
+                        </tr>
+                        <tr>
+                            <td>Small (0 - 25 pounds)</td>
+                            <td>$20 per dog</td>
+                            <td>$35 per dog</td>
+                            <td>$45 per dog</td>
+                        </tr>
+                    </table>`;
+                }
+                else if (url.includes("?package=washing") == true) {
+                    document.querySelector("#service").innerHTML = "Dog Washing";
+                    document.querySelector("#price").innerHTML = 
+                    `<table>
+                        <tr>
+                            <th>Dog Size</th>
+                            <th>Price</th>
+                            <th>Added Price (Deshed & Brush)</th>
+                        </tr>
+                        <tr>
+                            <td>Extra Large (80 pounds - above)</td>
+                            <td>$75 - $90</td>
+                            <td>+$15</td>
+                        </tr>
+                        <tr>
+                            <td>Large (50 - 80 pounds)</td>
+                            <td>$55</td>
+                            <td>+$10</td>
+                        </tr>
+                        <tr>
+                            <td>Medium (30 - 45 pounds)</td>
+                            <td>$45</td>
+                            <td>+$10</td>
+                        </tr>
+                        <tr>
+                            <td>Small (0 - 25 pounds)</td>
+                            <td>$35</td>
+                            <td>+$5</td>
+                        </tr>
+                    </table>`;
+                }
+                else if (url.includes("?package=brushing") == true) {
+                    document.querySelector("#service").innerHTML = "Dog Brushing/Deshedding";
+                    document.querySelector("#price").innerHTML = 
+                    `<table>
+                        <tr>
+                            <th>Dog Size</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Extra Large (80 pounds - above)</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr>
+                            <td>Large (50 - 80 pounds)</td>
+                            <td>$15</td>
+                        </tr>
+                        <tr>
+                            <td>Medium (30 - 45 pounds)</td>
+                            <td>$15</td>
+                        </tr>
+                        <tr>
+                            <td>Small (0 - 25 pounds)</td>
+                            <td>$10</td>
+                        </tr>
+                    </table>`;
+                }
+                else {
+                    window.open("index.html", "_self");
+                }
+    
+                document.querySelector(".year").innerHTML = year;
+            }
+        </script>
+    </head>
+    <body dir="ltr">
+        <div class="header">
+            <h1>LG &dash; Services</h1>
+            <p id="service"></p>
+        </div>
+        <div class="content" align="center">
+            <h1>Prices</h1>
+            <span id="price"></span>
+            <p><a href="index.html">Go Back</a><br/>
+            Copyright LG Services &copy; 2024 &dash; <span class="year"></span> all rights reserved.</p>
+        </div>
+    </body>
+</html>

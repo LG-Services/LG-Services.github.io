@@ -1,0 +1,39 @@
+body {
+    color: white;
+    background: rgb(38, 38, 38);
+    font-family: Arial;
+    margin: 0;
+}
+  
+.header {
+    padding: 60px;
+    text-align: center;
+    background: skyblue;
+    color: white;
+    font-size: 30px;
+}
+  
+.content {padding:20px;}
+  
+table, th, td {
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    background: white;
+}
+  
+td, tr {
+    height: 50px;
+}
+  
+a:link, a:visited {
+    color: darkred;
+}
+  
+a:hover, a:visited:hover {
+    color: orangered;
+}
+  
+a:active, a:visited:active {
+    color: green;
+}
